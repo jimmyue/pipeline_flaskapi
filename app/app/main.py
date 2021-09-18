@@ -12,7 +12,7 @@ app = Flask(__name__)
 api = Api(app)
 
 def get_dealer(dealer_code):
-    conn = pymysql.connect(host='10.10.22.172',port=3306,user='root',passwd='abc.1234',db='ways_lexus',use_unicode=True, charset="utf8")
+    conn = pymysql.connect(host='XXXX',port=3306,user='XXXX',passwd='XXXX',db='XXXX',use_unicode=True, charset="utf8")
     cur = conn.cursor()
     sql = "select DEALER_CODE,DEALER_NAME from tb_dealer_info where DEALER_CODE='%s'" % dealer_code
     cur.execute(sql)
